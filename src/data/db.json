@@ -1,0 +1,14 @@
+{
+  "profile": {
+    "currency": "GBP",
+    "userDisplayName": "Will Smith"
+  },
+  "transactions": [
+    {
+      "recipientName": "Matthieu",
+      "recipientEmail": "matthizou@gmail.com",
+      "amount": 3220,
+      "id": 1
+    }
+  ]
+}
