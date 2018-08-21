@@ -1,7 +1,7 @@
 # Project Title
 
 Technical exercise from some company, that was then extended.<br/>
-The goal is to implement a simple mock page in which the user will be able to transfer money and have an overview of the past transactions. A design is provided.
+The goal is to implement a simple mock page in which the user will be able to transfer money and have an overview of the past transactions. A design was provided.
 
 ## Getting Started
 
@@ -41,6 +41,6 @@ Due to time contrainsts, the code is not 100% finished. I wrote about 50% of the
 
 - This project has been built with create-react-app. I didn't eject for the examiner to have a clear view on what I added and what the tool generated.
 
-- The page provides some level of responsiveness. The left and right parts stack up vertically below a certain screen size. A optimization would be to split those 2 parts into different pages for narrow viewport, using responsive routing (https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/guides/philosophy.md#responsive-routes)
+- The page provides some level of responsiveness. The left and right parts stack up vertically below a certain screen size.
 
 - Internationalization has been started, as an extra, but not finished (Strings are still hardcoded) You can change the currency from GBP to EUR in the db.json, though, if you want. It will reflect in the UI.

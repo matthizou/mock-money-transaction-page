@@ -30,7 +30,7 @@ export const FormField = ({
 }) => {
   const InputComponent = component;
   return (
-    <StyledField>
+    <StyledField data-test={`field-${name}`}>
       {label && <Label>{label}</Label>}
       <InputComponent
         name={name}
@@ -38,7 +38,9 @@ export const FormField = ({
         isInvalid={errorMessage && errorMessage !== ''}
         {...input}
       />
-      {errorMessage && <ErrorMessage>{errorMessage}</ErrorMessage>}
+      {errorMessage && (
+        <ErrorMessage data-test="error-message">{errorMessage}</ErrorMessage>
+      )}
     </StyledField>
   );
 };

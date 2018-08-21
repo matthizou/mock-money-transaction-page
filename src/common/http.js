@@ -5,23 +5,13 @@ const checkStatus = response => {
   return Promise.reject(new Error(response.statusText));
 };
 
-export const get = url => {
-  console.log('#####' + url);
-  return fetch(url)
+export const get = url =>
+  fetch(url)
     .then(checkStatus)
     .then(response => response.json())
     .catch(error => {
       console.log('Fetch Error :-S', error);
     });
-};
-
-// export const get = url =>
-//   fetch(url)
-//     .then(checkStatus)
-//     .then(response => response.json())
-//     .catch(error => {
-//       console.log('Fetch Error :-S', error);
-//     });
 
 const POST_DEFAULT = {
   method: 'POST',

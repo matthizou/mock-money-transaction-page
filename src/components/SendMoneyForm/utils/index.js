@@ -1,2 +1,2 @@
 export { mapInputs } from './mapInputs';
-export { validateFields } from './validateField';
+export { validateFields, ERROR_MESSAGE } from './validateField';

@@ -14,7 +14,8 @@ export const ERROR_MESSAGE = defineMessages({
 
 export const VALIDATION_PASSED = '';
 
-export const validateField = (name, value, extraData = {}) => {
+export const validateField = (name, inputValue, extraData = {}) => {
+  const value = inputValue ? inputValue.trim() : '';
   if (value === '') {
     return ERROR_MESSAGE.required;
   }

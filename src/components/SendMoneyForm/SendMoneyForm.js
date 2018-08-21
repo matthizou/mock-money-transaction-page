@@ -36,7 +36,7 @@ export const SendMoneyForm = ({
   return (
     <section>
       <Header>Send money</Header>
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit={handleSubmit} data-test="sendMoneyForm">
         <FormField
           label="Name"
           type="text"

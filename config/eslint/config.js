@@ -1,6 +1,9 @@
 module.exports = {
   extends: 'react-app',
-  plugins: ['prettier'],
+  plugins: ['prettier', 'cypress'],
+  env: {
+    'cypress/globals': true,
+  },
   rules: {
     'prettier/prettier': [
       'error',
